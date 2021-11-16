@@ -1,10 +1,19 @@
 import * as React from 'react';
+import styled from 'styled-components/macro';
 
 export const Button = ({
-  children
+  children,
 }: {
   children: React.ReactNode;
-}) => <button style={{
-  background: '#fff'
-}}>{children}</button>
-
+}): JSX.Element => (
+  <button
+    css={{
+      background: '#fff',
+      '&:hover': {
+        background: '#f00'
+      }
+    }}
+  >
+    {children}
+  </button>
+);
