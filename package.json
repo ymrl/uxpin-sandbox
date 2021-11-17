@@ -83,7 +83,7 @@
     "lint": "eslint src",
     "format": "prettier --write src",
     "storybook": "start-storybook -p 6006 -s storybook_public",
-    "build-storybook": "build-storybook -s storybook_public",
+    "build-storybook": "build-storybook -s storybook_public -o build/storybook",
     "uxpin-push": "NODE_ENV=development $(npm bin)/uxpin-merge push"
   },
   "eslintConfig": {
