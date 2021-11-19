@@ -5,12 +5,15 @@ import {ColorGY7, ColorP1, ColorP5, ColorP7, ColorS5, ColorW, FontFamily} from '
 
 export const Button = ({
   children,
-  appearance
+  appearance,
+  onClick
 }: {
   children: React.ReactNode;
   appearance?: 'primary'| 'secondary'
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
 }): JSX.Element => (
   <button
+    onClick={onClick}
     css={{
       height: `${44 / 16}rem`,
       minWidth: `${2 * 44 / 16}rem`,
