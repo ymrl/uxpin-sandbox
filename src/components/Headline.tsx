@@ -5,7 +5,7 @@ import { ColorGY7, FontFamily } from '../constants';
 
 export const Headline = ({
   children,
-  level,
+  level = 1,
 }: {
   children: React.ReactNode;
   level: 1 | 2 | 3;
